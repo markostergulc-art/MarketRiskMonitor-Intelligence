@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "dataset_version": "20260927T125305Z",
+  "generated_at": "2026-09-27T12:53:05Z",
+  "status": "OK",
+  "languages": [
+    "en",
+    "hr",
+    "de",
+    "fr",
+    "es"
+  ],
+  "files": {
+    "events": {
+      "path": "snapshots/20260927T125305Z/events.json",
+      "sha256": "78217fa099c99e8086463ba05df4e18df0ee82d953ca2e6aa5b19c232cc03171",
+      "bytes": 20995,
+      "records": 2,
+      "schema_version": 1
+    },
+    "signals": {
+      "path": "snapshots/20260927T125305Z/signals.json",
+      "sha256": "4c144af4505eae5d3b5996907203ea992ebebeafa4cccde2d1b28e1323118c72",
+      "bytes": 3019,
+      "records": 1,
+      "schema_version": 1
+    },
+    "risks": {
+      "path": "snapshots/20260927T125305Z/risks.json",
+      "sha256": "de5ad8284349778101415c9352f4241718ef3a22866d9aa1edfbeb8736369acf",
+      "bytes": 6074,
+      "records": 2,
+      "schema_version": 1
+    },
+    "sources": {
+      "path": "snapshots/20260927T125305Z/sources.json",
+      "sha256": "9380fb406aaca19ed908d959ce5eab98f7fd2546e9dd6999ccba5c48429f0913",
+      "bytes": 13530,
+      "records": 16,
+      "schema_version": 1
+    },
+    "alerts": {
+      "path": "snapshots/20260927T125305Z/alerts.json",
+      "sha256": "0f3b6c2d05501466203a58c47efb6b7a23cd110c5ae0d8229d719710d478e35c",
+      "bytes": 821,
+      "records": 3,
+      "schema_version": 1
+    },
+    "audit_summary": {
+      "path": "snapshots/20260927T125305Z/audit_summary.json",
+      "sha256": "8f9c063c5e971477c0688ef4eab6d78375be235453a2cf75defee3a732997d4c",
+      "bytes": 512,
+      "records": 1,
+      "schema_version": 1
+    }
+  }
+}
