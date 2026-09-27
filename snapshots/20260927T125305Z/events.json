@@ -1,0 +1,446 @@
+[
+  {
+    "schema_version": 1,
+    "event_id": "SHIPPING_LOGISTICS-20260927-KILIIA01",
+    "revision": 1,
+    "lifecycle_status": "VERIFIED",
+    "category": "SHIPPING_LOGISTICS",
+    "subcategory": "PORT_INFRASTRUCTURE_STRIKE",
+    "event_time": {
+      "start_at": null,
+      "end_at": null,
+      "precision": "DATE_ONLY",
+      "date": "2026-09-27"
+    },
+    "first_detected_at": "2026-09-27T00:53:00Z",
+    "last_updated_at": "2026-09-27T12:19:44Z",
+    "accuracy": {
+      "score": 4,
+      "label": "STRONGLY_VERIFIED",
+      "confidence": 0.86,
+      "independent_evidence_families": 2,
+      "material_contradiction": false,
+      "reasoning_summary": "Kiliia port and civilian infrastructure damage is directly attributed to the local district administration. Multiple media reports repeat that primary source, while separate Ukrainian emergency-service reporting independently confirms substantial same-night attack damage in Odesa region. Port-specific damage was not independently confirmed by a port operator or satellite source in this run, so the event is capped at 4/5."
+    },
+    "impact_severity": "HIGH",
+    "geography": {
+      "countries": [
+        "UA"
+      ],
+      "regions": [
+        "ODESA_OBLAST",
+        "DANUBE_DELTA",
+        "BLACK_SEA_REGION"
+      ],
+      "locations": [
+        {
+          "name": "Kiliia",
+          "country": "UA",
+          "lat": 45.455,
+          "lon": 29.263,
+          "precision": "CITY"
+        }
+      ]
+    },
+    "entities": {
+      "companies": [],
+      "organizations": [
+        "Izmail District State Administration",
+        "State Emergency Service of Ukraine"
+      ],
+      "infrastructure": [
+        "Kiliia port infrastructure"
+      ],
+      "people": []
+    },
+    "commodities": [
+      "GRAIN",
+      "AGRICULTURAL_EXPORTS"
+    ],
+    "claims": [
+      {
+        "claim_id": "CLM-KILIIA-001",
+        "type": "FACT",
+        "text_en": "Russian drones struck Kiliia in Odesa Oblast overnight on September 27, damaging port and civilian infrastructure.",
+        "verification_status": "VERIFIED",
+        "source_refs": [
+          "SRC-KILIIA-RDA-TG",
+          "SRC-UA-PRAVDA-KILIIA",
+          "SRC-BESSARABIA-KILIIA"
+        ],
+        "evidence_family_refs": [
+          "EF-KILIIA-RDA"
+        ]
+      },
+      {
+        "claim_id": "CLM-KILIIA-002",
+        "type": "FACT",
+        "text_en": "A fire caused by the attack was extinguished and the initial Kiliia report said there were no casualties there.",
+        "verification_status": "CORROBORATED",
+        "source_refs": [
+          "SRC-KILIIA-RDA-TG",
+          "SRC-UA-PRAVDA-KILIIA",
+          "SRC-BESSARABIA-KILIIA"
+        ],
+        "evidence_family_refs": [
+          "EF-KILIIA-RDA"
+        ]
+      },
+      {
+        "claim_id": "CLM-KILIIA-003",
+        "type": "SOURCE_CLAIM",
+        "text_en": "A local report said a grain-storage warehouse was among damaged civilian objects.",
+        "verification_status": "PLAUSIBLE",
+        "source_refs": [
+          "SRC-BESSARABIA-KILIIA"
+        ],
+        "evidence_family_refs": [
+          "EF-KILIIA-RDA"
+        ]
+      },
+      {
+        "claim_id": "CLM-KILIIA-004",
+        "type": "AI_INFERENCE",
+        "text_en": "Repeated attacks on southern Odesa logistics infrastructure increase operational risk for Danube and Black Sea export flows.",
+        "verification_status": "INFERENCE",
+        "source_refs": [
+          "SRC-UKRINFORM-ODESA-DSNS",
+          "SRC-UKRINFORM-VESSEL-SEP23",
+          "SRC-REUTERS-UA-PORT-CAPACITY"
+        ],
+        "evidence_family_refs": [
+          "EF-ODESA-DSNS",
+          "EF-UA-BORDERGUARD-VESSEL",
+          "EF-REUTERS-UA-PORTS"
+        ]
+      }
+    ],
+    "source_refs": [
+      "SRC-KILIIA-RDA-TG",
+      "SRC-UA-PRAVDA-KILIIA",
+      "SRC-BESSARABIA-KILIIA",
+      "SRC-UKRINFORM-ODESA-DSNS"
+    ],
+    "evidence_family_refs": [
+      "EF-KILIIA-RDA",
+      "EF-ODESA-DSNS"
+    ],
+    "assessment": {
+      "eu_relevance": "MEDIUM",
+      "germany_relevance": "LOW",
+      "observed_impacts": [
+        "Damage to port and civilian infrastructure in Kiliia.",
+        "Fire response after the strike."
+      ],
+      "potential_impacts": [
+        "Higher operational and insurance risk for Danube/Black Sea logistics.",
+        "Possible disruption to agricultural-export handling if port damage affects operations."
+      ],
+      "shortage_signal": false,
+      "shortage_state": "NONE",
+      "time_horizon": "DAYS_TO_WEEKS",
+      "uncertainties": [
+        "The extent of damage to port operating capacity was not established in this run.",
+        "No independent port-operator or satellite confirmation of port-specific damage was found in this run."
+      ]
+    },
+    "translations": {
+      "en": {
+        "title": "Drone strike damages port infrastructure in Kiliia, Odesa Oblast",
+        "summary": "Local authorities reported that Russian drones struck Kiliia overnight, damaging port and civilian infrastructure. A fire was extinguished and the initial local report said there were no casualties in Kiliia.",
+        "why_it_matters": "Kiliia sits in Ukraine's Danube logistics corridor, making repeated attacks relevant to export-route resilience and shipping risk.",
+        "observed_impact": "Port and civilian infrastructure were reported damaged.",
+        "potential_impact": "If operational assets were affected, the attack could increase disruption, insurance and routing risk for regional exports.",
+        "uncertainties": [
+          "The extent of operational port damage remains unconfirmed.",
+          "A grain-storage damage report has not been independently verified."
+        ]
+      },
+      "hr": {
+        "title": "Napad dronovima oštetio lučku infrastrukturu u Kiliji u Odeskoj oblasti",
+        "summary": "Lokalne vlasti izvijestile su da su ruski dronovi tijekom noći napali Kiliju te oštetili lučku i civilnu infrastrukturu. Požar je ugašen, a prema početnom lokalnom izvješću u Kiliji nije bilo žrtava.",
+        "why_it_matters": "Kilija se nalazi u ukrajinskom dunavskom logističkom koridoru, pa su ponovljeni napadi važni za otpornost izvoznih ruta i rizik pomorskog prometa.",
+        "observed_impact": "Prijavljena su oštećenja lučke i civilne infrastrukture.",
+        "potential_impact": "Ako su pogođena operativna sredstva luke, napad bi mogao povećati poremećaje, troškove osiguranja i rizik preusmjeravanja regionalnog izvoza.",
+        "uncertainties": [
+          "Opseg oštećenja operativnih lučkih kapaciteta još nije potvrđen.",
+          "Navod o oštećenju skladišta žitarica nije neovisno potvrđen."
+        ]
+      },
+      "de": {
+        "title": "Drohnenangriff beschädigt Hafeninfrastruktur in Kilija in der Region Odesa",
+        "summary": "Lokale Behörden meldeten, dass russische Drohnen Kilija in der Nacht angegriffen und Hafen- sowie zivile Infrastruktur beschädigt hätten. Ein Brand wurde gelöscht; der erste lokale Bericht meldete keine Opfer in Kilija.",
+        "why_it_matters": "Kilija liegt im ukrainischen Donau-Logistikkorridor; wiederholte Angriffe sind daher für die Widerstandsfähigkeit von Exportrouten und das Schifffahrtsrisiko relevant.",
+        "observed_impact": "Schäden an Hafen- und ziviler Infrastruktur wurden gemeldet.",
+        "potential_impact": "Falls betriebliche Hafenanlagen betroffen sind, könnten Störungen, Versicherungskosten und Umleitungsrisiken für regionale Exporte steigen.",
+        "uncertainties": [
+          "Das Ausmaß der betrieblichen Hafenschäden ist noch nicht bestätigt.",
+          "Der Bericht über Schäden an einem Getreidelager wurde nicht unabhängig bestätigt."
+        ]
+      },
+      "fr": {
+        "title": "Une frappe de drones endommage des infrastructures portuaires à Kilia, dans la région d'Odesa",
+        "summary": "Les autorités locales ont indiqué que des drones russes avaient frappé Kilia pendant la nuit, endommageant des infrastructures portuaires et civiles. Un incendie a été éteint et le premier bilan local ne faisait état d'aucune victime à Kilia.",
+        "why_it_matters": "Kilia se situe sur le corridor logistique ukrainien du Danube; des attaques répétées sont donc pertinentes pour la résilience des routes d'exportation et le risque maritime.",
+        "observed_impact": "Des dommages aux infrastructures portuaires et civiles ont été signalés.",
+        "potential_impact": "Si des équipements opérationnels du port ont été touchés, l'attaque pourrait accroître les perturbations, les coûts d'assurance et les risques de déroutement des exportations régionales.",
+        "uncertainties": [
+          "L'étendue des dommages affectant les opérations portuaires n'est pas encore confirmée.",
+          "Le signalement de dommages à un entrepôt de céréales n'a pas été confirmé de manière indépendante."
+        ]
+      },
+      "es": {
+        "title": "Un ataque con drones daña infraestructura portuaria en Kiliia, región de Odesa",
+        "summary": "Las autoridades locales informaron de que drones rusos atacaron Kiliia durante la noche y dañaron infraestructura portuaria y civil. El incendio fue extinguido y el informe local inicial indicó que no hubo víctimas en Kiliia.",
+        "why_it_matters": "Kiliia forma parte del corredor logístico ucraniano del Danubio, por lo que los ataques repetidos son relevantes para la resiliencia de las rutas de exportación y el riesgo marítimo.",
+        "observed_impact": "Se informó de daños en infraestructura portuaria y civil.",
+        "potential_impact": "Si se vieron afectados activos operativos del puerto, el ataque podría aumentar las interrupciones, los costes de seguro y el riesgo de desvío de las exportaciones regionales.",
+        "uncertainties": [
+          "El alcance del daño operativo en el puerto aún no está confirmado.",
+          "El informe sobre daños en un almacén de grano no ha sido confirmado de forma independiente."
+        ]
+      }
+    },
+    "revision_history": [
+      {
+        "revision": 1,
+        "changed_at": "2026-09-27T12:19:44Z",
+        "previous_score": null,
+        "new_score": 4,
+        "previous_status": null,
+        "new_status": "VERIFIED",
+        "reason": "Initial dry-run record based on local-government reporting plus independent same-night regional emergency-service corroboration; port-specific damage lacks a second independent direct confirmation."
+      }
+    ],
+    "ai_metadata": {
+      "research_run_id": "MVP1-20260927T121944Z",
+      "generated_at": "2026-09-27T12:19:44Z",
+      "pipeline_version": "1.0.1-dryrun",
+      "canonical_language": "en",
+      "model_label": "GPT-5.6 Sol"
+    }
+  },
+  {
+    "schema_version": 1,
+    "event_id": "GEOPOLITICS-20260926-DE-RU-FM01",
+    "revision": 2,
+    "lifecycle_status": "VERIFIED",
+    "category": "GEOPOLITICS",
+    "subcategory": "DIPLOMATIC_CONTACT",
+    "event_time": {
+      "start_at": null,
+      "end_at": null,
+      "precision": "DATE_ONLY",
+      "date": "2026-09-26"
+    },
+    "first_detected_at": "2026-09-26T19:00:00Z",
+    "last_updated_at": "2026-09-27T12:53:05Z",
+    "accuracy": {
+      "score": 5,
+      "label": "VERIFIED",
+      "confidence": 0.97,
+      "independent_evidence_families": 2,
+      "material_contradiction": false,
+      "reasoning_summary": "The original ZDF interview directly records participant Wadephul confirming the meeting and disagreement. Tagesschau separately attributes post-meeting confirmation to Lavrov speaking to dpa. These two participant origins establish the central meeting fact. Repetitions of the same Wadephul interview in Tagesschau/deutschland.de do not add independent confirmations. Score 5 applies to the meeting, not to wider geopolitical predictions."
+    },
+    "impact_severity": "LOW",
+    "geography": {
+      "countries": [
+        "DE",
+        "RU",
+        "US"
+      ],
+      "regions": [
+        "EUROPE",
+        "NORTH_AMERICA"
+      ],
+      "locations": [
+        {
+          "name": "New York",
+          "country": "US",
+          "lat": 40.7128,
+          "lon": -74.006,
+          "precision": "CITY"
+        }
+      ]
+    },
+    "entities": {
+      "companies": [],
+      "organizations": [
+        "German Federal Foreign Office",
+        "Russian Ministry of Foreign Affairs",
+        "United Nations"
+      ],
+      "infrastructure": [],
+      "people": [
+        "Johann Wadephul",
+        "Sergey Lavrov"
+      ]
+    },
+    "commodities": [],
+    "claims": [
+      {
+        "claim_id": "CLM-DERU-001",
+        "type": "FACT",
+        "text_en": "German Foreign Minister Johann Wadephul and Russian Foreign Minister Sergey Lavrov met in New York on the sidelines of the UN General Assembly.",
+        "verification_status": "VERIFIED",
+        "source_refs": [
+          "SRC-TAGESSCHAU-WADEPHUL-LAVROV",
+          "SRC-DEUTSCHLAND-WADEPHUL-LAVROV",
+          "SRC-ZDF-WADEPHUL-INTERVIEW"
+        ],
+        "evidence_family_refs": [
+          "EF-DE-RU-MEET-LAVROV-DPA",
+          "EF-DE-RU-MEET-WADEPHUL-ZDF"
+        ]
+      },
+      {
+        "claim_id": "CLM-DERU-002",
+        "type": "FACT",
+        "text_en": "The meeting was the first bilateral meeting at foreign-minister level between Germany and Russia since Russia's full-scale invasion of Ukraine.",
+        "verification_status": "VERIFIED",
+        "source_refs": [
+          "SRC-TAGESSCHAU-WADEPHUL-LAVROV",
+          "SRC-DEUTSCHLAND-WADEPHUL-LAVROV",
+          "SRC-ZDF-WADEPHUL-INTERVIEW"
+        ],
+        "evidence_family_refs": [
+          "EF-DE-RU-MEET-LAVROV-DPA",
+          "EF-DE-RU-MEET-WADEPHUL-ZDF"
+        ]
+      },
+      {
+        "claim_id": "CLM-DERU-003",
+        "type": "FACT",
+        "text_en": "Wadephul said the discussion was intense but that the sides did not agree on key points.",
+        "verification_status": "VERIFIED",
+        "source_refs": [
+          "SRC-ZDF-WADEPHUL-INTERVIEW",
+          "SRC-DEUTSCHLAND-WADEPHUL-LAVROV"
+        ],
+        "evidence_family_refs": [
+          "EF-DE-RU-MEET-WADEPHUL-ZDF"
+        ]
+      },
+      {
+        "claim_id": "CLM-DERU-004",
+        "type": "AI_INFERENCE",
+        "text_en": "The contact is a modest diplomatic signal but does not, on its own, indicate a near-term change in the war or sanctions environment.",
+        "verification_status": "INFERENCE",
+        "source_refs": [
+          "SRC-TAGESSCHAU-WADEPHUL-LAVROV",
+          "SRC-DEUTSCHLAND-WADEPHUL-LAVROV",
+          "SRC-ZDF-WADEPHUL-INTERVIEW"
+        ],
+        "evidence_family_refs": [
+          "EF-DE-RU-MEET-LAVROV-DPA",
+          "EF-DE-RU-MEET-WADEPHUL-ZDF"
+        ]
+      }
+    ],
+    "source_refs": [
+      "SRC-TAGESSCHAU-WADEPHUL-LAVROV",
+      "SRC-DEUTSCHLAND-WADEPHUL-LAVROV",
+      "SRC-ZDF-WADEPHUL-INTERVIEW"
+    ],
+    "evidence_family_refs": [
+      "EF-DE-RU-MEET-WADEPHUL-ZDF",
+      "EF-DE-RU-MEET-LAVROV-DPA"
+    ],
+    "assessment": {
+      "eu_relevance": "MEDIUM",
+      "germany_relevance": "HIGH",
+      "observed_impacts": [
+        "Direct Germany-Russia foreign-minister contact resumed at bilateral level for this meeting."
+      ],
+      "potential_impacts": [
+        "Potential channel for future diplomatic communication, but no concrete policy or sanctions change was reported."
+      ],
+      "shortage_signal": false,
+      "shortage_state": "NONE",
+      "time_horizon": "WEEKS_TO_MONTHS",
+      "uncertainties": [
+        "The meeting produced no reported agreement on key disputed issues."
+      ]
+    },
+    "translations": {
+      "en": {
+        "title": "German and Russian foreign ministers hold first bilateral meeting since 2022",
+        "summary": "Johann Wadephul and Sergey Lavrov met in New York on the sidelines of the UN General Assembly. Wadephul described the discussion as intense but said the sides did not agree on key points.",
+        "why_it_matters": "The meeting reopens a direct high-level diplomatic channel, although there is no evidence yet of a policy or sanctions shift.",
+        "observed_impact": "A direct foreign-minister-level meeting took place.",
+        "potential_impact": "The contact may support future diplomacy, but near-term geopolitical effects remain limited.",
+        "uncertainties": [
+          "No concrete agreement was reported."
+        ]
+      },
+      "hr": {
+        "title": "Njemački i ruski ministri vanjskih poslova održali prvi bilateralni sastanak od 2022.",
+        "summary": "Johann Wadephul i Sergej Lavrov sastali su se u New Yorku na marginama Opće skupštine UN-a. Wadephul je razgovor opisao kao intenzivan, ali je rekao da se strane nisu složile oko ključnih pitanja.",
+        "why_it_matters": "Sastanak ponovno otvara izravan diplomatski kanal na visokoj razini, ali zasad nema dokaza o promjeni politike ili sankcija.",
+        "observed_impact": "Održan je izravan sastanak na razini ministara vanjskih poslova.",
+        "potential_impact": "Kontakt može pomoći budućoj diplomaciji, ali kratkoročni geopolitički učinci zasad su ograničeni.",
+        "uncertainties": [
+          "Nije objavljen nikakav konkretan dogovor."
+        ]
+      },
+      "de": {
+        "title": "Deutscher und russischer Außenminister führen erstes bilaterales Treffen seit 2022",
+        "summary": "Johann Wadephul und Sergej Lawrow trafen sich in New York am Rande der UN-Generalversammlung. Wadephul bezeichnete das Gespräch als intensiv, sagte jedoch, dass in zentralen Punkten keine Einigkeit bestand.",
+        "why_it_matters": "Das Treffen öffnet erneut einen direkten hochrangigen diplomatischen Kanal, ohne dass bislang ein Politik- oder Sanktionswechsel erkennbar ist.",
+        "observed_impact": "Ein direktes Treffen auf Außenministerebene fand statt.",
+        "potential_impact": "Der Kontakt könnte künftige Diplomatie erleichtern; kurzfristige geopolitische Auswirkungen bleiben jedoch begrenzt.",
+        "uncertainties": [
+          "Es wurde keine konkrete Einigung bekanntgegeben."
+        ]
+      },
+      "fr": {
+        "title": "Les ministres allemand et russe des Affaires étrangères tiennent leur première réunion bilatérale depuis 2022",
+        "summary": "Johann Wadephul et Sergueï Lavrov se sont rencontrés à New York en marge de l'Assemblée générale de l'ONU. Wadephul a qualifié l'échange d'intense, tout en indiquant que les parties restaient en désaccord sur les points essentiels.",
+        "why_it_matters": "La rencontre rouvre un canal diplomatique direct de haut niveau, sans preuve à ce stade d'un changement de politique ou de sanctions.",
+        "observed_impact": "Une rencontre directe au niveau des ministres des Affaires étrangères a eu lieu.",
+        "potential_impact": "Le contact pourrait faciliter de futurs échanges diplomatiques, mais les effets géopolitiques à court terme restent limités.",
+        "uncertainties": [
+          "Aucun accord concret n'a été annoncé."
+        ]
+      },
+      "es": {
+        "title": "Los ministros de Exteriores de Alemania y Rusia celebran su primera reunión bilateral desde 2022",
+        "summary": "Johann Wadephul y Serguéi Lavrov se reunieron en Nueva York al margen de la Asamblea General de la ONU. Wadephul calificó la conversación de intensa, pero afirmó que las partes no coincidieron en cuestiones clave.",
+        "why_it_matters": "La reunión reabre un canal diplomático directo de alto nivel, aunque todavía no hay indicios de un cambio de política o de sanciones.",
+        "observed_impact": "Se celebró una reunión directa a nivel de ministros de Exteriores.",
+        "potential_impact": "El contacto podría facilitar una futura diplomacia, pero los efectos geopolíticos a corto plazo siguen siendo limitados.",
+        "uncertainties": [
+          "No se informó de ningún acuerdo concreto."
+        ]
+      }
+    },
+    "revision_history": [
+      {
+        "revision": 1,
+        "changed_at": "2026-09-27T12:19:44Z",
+        "previous_score": null,
+        "new_score": 5,
+        "previous_status": null,
+        "new_status": "VERIFIED",
+        "reason": "Two distinct German reporting families document the meeting and direct minister remarks; no material contradiction."
+      },
+      {
+        "revision": 2,
+        "changed_at": "2026-09-27T12:53:05Z",
+        "previous_score": 5,
+        "new_score": 5,
+        "previous_status": "VERIFIED",
+        "new_status": "VERIFIED",
+        "reason": "MVP-2 repair: add original ZDF participant interview; group repeated Wadephul remarks under one origin and use separately attributed Lavrov/dpa remarks as corroboration. Preserve original revision and all five translations."
+      }
+    ],
+    "ai_metadata": {
+      "research_run_id": "MVP2-20260927-REPAIR-02",
+      "generated_at": "2026-09-27T12:53:05Z",
+      "pipeline_version": "1.0.1-mvp2-repair",
+      "canonical_language": "en",
+      "model_label": null
+    }
+  }
+]

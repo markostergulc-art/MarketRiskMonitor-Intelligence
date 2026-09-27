@@ -1,0 +1,40 @@
+[
+  {
+    "schema_version": 1,
+    "signal_id": "SIG-ENERGY-20260927-EU-LNG01",
+    "category": "ENERGY",
+    "status": "ACTIVE",
+    "detected_at": "2026-09-27T12:19:44Z",
+    "last_updated_at": "2026-09-27T12:19:44Z",
+    "verification_score": 2,
+    "impact_severity": "HIGH",
+    "related_event_ids": [],
+    "source_refs": [
+      "SRC-ENERGYRISKIQ-LNG",
+      "SRC-MACROMICRO-AGSI",
+      "SRC-GEF-ENERGY"
+    ],
+    "translations": {
+      "en": {
+        "title": "Europe remains exposed to LNG competition while gas storage is near 70%",
+        "summary": "Specialist data sources show EU gas storage around 70% in late September, while one specialist feed reports Asian JKM LNG priced above European TTF on September 27. The storage reading is well supported by AGSI-derived data, but the same-day LNG price spread was not independently verified in this run."
+      },
+      "hr": {
+        "title": "Europa ostaje izložena konkurenciji za LNG dok su skladišta plina oko 70%",
+        "summary": "Specijalizirani izvori pokazuju da su skladišta plina u EU krajem rujna oko 70%, dok jedan specijalizirani izvor za 27. rujna navodi višu azijsku JKM cijenu LNG-a od europskog TTF-a. Podatak o skladištima dobro je potkrijepljen podacima izvedenima iz AGSI+, ali isti dnevni raspon cijena LNG-a nije neovisno potvrđen u ovom runu."
+      },
+      "de": {
+        "title": "Europa bleibt bei rund 70% Gasspeicherfüllstand dem LNG-Wettbewerb ausgesetzt",
+        "summary": "Spezialisierte Datenquellen zeigen für Ende September einen EU-Gasspeicherstand von rund 70%. Ein Spezialanbieter meldet für den 27. September zudem einen asiatischen JKM-LNG-Preis oberhalb des europäischen TTF. Der Speicherwert ist durch AGSI+-abgeleitete Daten gut gestützt; der tagesaktuelle LNG-Preisabstand wurde in diesem Lauf jedoch nicht unabhängig verifiziert."
+      },
+      "fr": {
+        "title": "L'Europe reste exposée à la concurrence pour le GNL avec des stocks de gaz proches de 70%",
+        "summary": "Des sources spécialisées situent les stocks de gaz de l'UE autour de 70% fin septembre. Une source spécialisée indique également, le 27 septembre, un prix asiatique JKM du GNL supérieur au TTF européen. Le niveau de stockage est bien étayé par des données dérivées d'AGSI+, mais l'écart de prix du GNL du jour n'a pas été vérifié indépendamment lors de ce passage."
+      },
+      "es": {
+        "title": "Europa sigue expuesta a la competencia por el GNL con los almacenamientos de gas cerca del 70%",
+        "summary": "Fuentes especializadas sitúan el almacenamiento de gas de la UE en torno al 70% a finales de septiembre. Una fuente especializada informa además de que el precio asiático JKM del GNL estaba por encima del TTF europeo el 27 de septiembre. El dato de almacenamiento está bien respaldado por información derivada de AGSI+, pero el diferencial de precios del GNL del mismo día no se verificó de forma independiente en esta ejecución."
+      }
+    }
+  }
+]

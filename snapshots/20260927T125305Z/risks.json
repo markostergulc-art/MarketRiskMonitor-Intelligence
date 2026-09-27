@@ -1,0 +1,93 @@
+[
+  {
+    "schema_version": 1,
+    "risk_id": "RISK-ENERGY-20260927-EU-Q4-01",
+    "category": "ENERGY",
+    "status": "ELEVATED",
+    "evidence_score": 3,
+    "outlook_confidence": "MEDIUM",
+    "impact_severity": "HIGH",
+    "time_horizon": "WEEKS_TO_MONTHS",
+    "related_event_ids": [],
+    "related_signal_ids": [
+      "SIG-ENERGY-20260927-EU-LNG01"
+    ],
+    "drivers": [
+      "EU gas storage remains materially below typical late-September levels according to AGSI-derived trackers.",
+      "Middle East disruptions continue to affect global oil, diesel, LNG and shipping markets.",
+      "France has mobilized its diplomatic network to diversify and secure crude, LNG and refined-product supplies."
+    ],
+    "uncertainties": [
+      "Winter weather and demand remain unknown.",
+      "The pace of Middle East supply-route normalization may change quickly.",
+      "Same-day JKM/TTF spread data used in the Signal was not independently verified in this run."
+    ],
+    "translations": {
+      "en": {
+        "title": "European energy-supply pressure remains elevated into Q4",
+        "summary": "Current storage and market signals, together with official French diversification efforts and broader diesel/LNG tightness, support an elevated but not yet acute European energy-supply risk for the coming weeks and months."
+      },
+      "hr": {
+        "title": "Pritisak na europsku opskrbu energijom ostaje povišen u četvrtom tromjesečju",
+        "summary": "Trenutačni signali iz skladišta i tržišta, zajedno sa službenim francuskim naporima za diversifikaciju te širim pritiskom na dizel i LNG, podupiru povišen, ali zasad ne akutan rizik za europsku opskrbu energijom u sljedećim tjednima i mjesecima."
+      },
+      "de": {
+        "title": "Der Druck auf Europas Energieversorgung bleibt im vierten Quartal erhöht",
+        "summary": "Aktuelle Speicher- und Marktsignale sowie Frankreichs offizielle Diversifizierungsbemühungen und die breitere Knappheit bei Diesel und LNG sprechen für ein erhöhtes, aber noch nicht akutes Versorgungsrisiko in Europa in den kommenden Wochen und Monaten."
+      },
+      "fr": {
+        "title": "La pression sur l'approvisionnement énergétique européen reste élevée au quatrième trimestre",
+        "summary": "Les signaux actuels liés aux stocks et au marché, les efforts officiels français de diversification ainsi que les tensions plus larges sur le diesel et le GNL soutiennent un risque d'approvisionnement énergétique européen élevé, mais pas encore aigu, pour les semaines et mois à venir."
+      },
+      "es": {
+        "title": "La presión sobre el suministro energético europeo sigue elevada de cara al cuarto trimestre",
+        "summary": "Las señales actuales de almacenamiento y mercado, junto con los esfuerzos oficiales franceses de diversificación y la tensión más amplia en diésel y GNL, respaldan un riesgo elevado, aunque todavía no agudo, para el suministro energético europeo en las próximas semanas y meses."
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "risk_id": "RISK-SHIPPING-20260927-BLACKSEA-01",
+    "category": "SHIPPING_LOGISTICS",
+    "status": "HIGH",
+    "evidence_score": 4,
+    "outlook_confidence": "MEDIUM",
+    "impact_severity": "HIGH",
+    "time_horizon": "DAYS_TO_WEEKS",
+    "related_event_ids": [
+      "SHIPPING_LOGISTICS-20260927-KILIIA01"
+    ],
+    "related_signal_ids": [],
+    "drivers": [
+      "Fresh strike damage reported at Kiliia port infrastructure.",
+      "A civilian vessel departing a Ukrainian port was struck in the Black Sea on September 23.",
+      "Ukraine's Black Sea export infrastructure has already suffered repeated capacity losses from attacks."
+    ],
+    "uncertainties": [
+      "The operational capacity loss at Kiliia is not yet quantified.",
+      "Future strike frequency and shipowner response are uncertain."
+    ],
+    "translations": {
+      "en": {
+        "title": "Risk to Ukrainian Danube and Black Sea export logistics remains high",
+        "summary": "The Kiliia strike adds to a pattern of attacks on Ukrainian port and maritime assets. Repeated incidents can increase operational disruption, insurance costs and shipowner reluctance even when individual facilities remain partly operational."
+      },
+      "hr": {
+        "title": "Rizik za ukrajinsku dunavsku i crnomorsku izvoznu logistiku ostaje visok",
+        "summary": "Napad na Kiliju nadovezuje se na niz napada na ukrajinske lučke i pomorske objekte. Ponavljani incidenti mogu povećati operativne poremećaje, troškove osiguranja i oprez brodara čak i kada pojedini objekti ostanu djelomično operativni."
+      },
+      "de": {
+        "title": "Risiko für ukrainische Donau- und Schwarzmeer-Exportlogistik bleibt hoch",
+        "summary": "Der Angriff auf Kilija reiht sich in wiederholte Angriffe auf ukrainische Hafen- und maritime Infrastruktur ein. Solche Vorfälle können Betriebsstörungen, Versicherungskosten und die Zurückhaltung von Reedereien erhöhen, selbst wenn einzelne Anlagen teilweise betriebsfähig bleiben."
+      },
+      "fr": {
+        "title": "Le risque pour la logistique d'exportation ukrainienne sur le Danube et la mer Noire reste élevé",
+        "summary": "La frappe sur Kilia s'ajoute à une série d'attaques contre les infrastructures portuaires et maritimes ukrainiennes. La répétition des incidents peut accroître les perturbations opérationnelles, les coûts d'assurance et la réticence des armateurs, même lorsque certaines installations restent partiellement opérationnelles."
+      },
+      "es": {
+        "title": "El riesgo para la logística de exportación ucraniana por el Danubio y el mar Negro sigue siendo alto",
+        "summary": "El ataque a Kiliia se suma a una serie de ataques contra activos portuarios y marítimos ucranianos. Los incidentes repetidos pueden aumentar las interrupciones operativas, los costes de seguro y la cautela de los armadores incluso cuando algunas instalaciones sigan parcialmente operativas."
+      }
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "run_id": "MVP2-20260927-REPAIR-02",
+  "invocation": "MANUAL",
+  "started_at": "2026-09-27T12:46:03Z",
+  "finished_at": "2026-09-27T12:53:05Z",
+  "window_start": "2026-09-26T12:19:44Z",
+  "window_end": "2026-09-27T12:19:44Z",
+  "result": "PASS",
+  "validation": "PASS",
+  "publication": "PENDING",
+  "counts": {
+    "sources_considered": 16,
+    "candidate_events": 5,
+    "new_events": 2,
+    "updated_events": 0,
+    "retracted_events": 0,
+    "duplicate_reports_collapsed": 3
+  }
+}

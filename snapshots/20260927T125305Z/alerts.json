@@ -1,0 +1,32 @@
+[
+  {
+    "schema_version": 1,
+    "alert_id": "ALERT-20260927-KILIIA",
+    "type": "EVENT",
+    "ref_id": "SHIPPING_LOGISTICS-20260927-KILIIA01",
+    "priority": "HIGH",
+    "verification_score": 4,
+    "impact_severity": "HIGH",
+    "created_at": "2026-09-27T12:19:44Z"
+  },
+  {
+    "schema_version": 1,
+    "alert_id": "ALERT-20260927-EUENERGY",
+    "type": "RISK",
+    "ref_id": "RISK-ENERGY-20260927-EU-Q4-01",
+    "priority": "HIGH",
+    "verification_score": 3,
+    "impact_severity": "HIGH",
+    "created_at": "2026-09-27T12:19:44Z"
+  },
+  {
+    "schema_version": 1,
+    "alert_id": "ALERT-20260927-BLACKSEA",
+    "type": "RISK",
+    "ref_id": "RISK-SHIPPING-20260927-BLACKSEA-01",
+    "priority": "HIGH",
+    "verification_score": 4,
+    "impact_severity": "HIGH",
+    "created_at": "2026-09-27T12:19:44Z"
+  }
+]
