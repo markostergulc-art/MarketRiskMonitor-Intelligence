@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://marketriskmonitor.local/schemas/risk.schema.json",
+  "title": "MRM OSINT Risk",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "risk_id",
+    "category",
+    "status",
+    "evidence_score",
+    "outlook_confidence",
+    "impact_severity",
+    "time_horizon",
+    "related_event_ids",
+    "related_signal_ids",
+    "drivers",
+    "uncertainties",
+    "translations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "risk_id": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "WATCH",
+        "ELEVATED",
+        "HIGH",
+        "REALIZED",
+        "RESOLVED"
+      ]
+    },
+    "evidence_score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "outlook_confidence": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "impact_severity": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "CRITICAL"
+      ]
+    },
+    "time_horizon": {
+      "enum": [
+        "HOURS",
+        "DAYS",
+        "DAYS_TO_WEEKS",
+        "WEEKS_TO_MONTHS",
+        "MONTHS_PLUS",
+        "UNKNOWN"
+      ]
+    },
+    "related_event_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "related_signal_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "drivers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "translations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "hr",
+        "de",
+        "fr",
+        "es"
+      ],
+      "properties": {
+        "en": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "summary"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            }
+          }
+        },
+        "hr": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "summary"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            }
+          }
+        },
+        "de": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "summary"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            }
+          }
+        },
+        "fr": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "summary"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            }
+          }
+        },
+        "es": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "summary"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

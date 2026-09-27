@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://marketriskmonitor.local/schemas/source.schema.json",
+  "title": "MRM OSINT Source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_id",
+    "name",
+    "source_class",
+    "source_type",
+    "url",
+    "language",
+    "published_at",
+    "retrieved_at",
+    "is_primary",
+    "is_original",
+    "evidence_family_id",
+    "relationship",
+    "availability",
+    "reputation",
+    "published_date",
+    "publication_precision"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "source_class": {
+      "enum": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "source_type": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "language": {
+      "type": "string",
+      "minLength": 2
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[A-Z]{2}$"
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "is_primary": {
+      "type": "boolean"
+    },
+    "is_original": {
+      "type": "boolean"
+    },
+    "evidence_family_id": {
+      "type": "string"
+    },
+    "relationship": {
+      "enum": [
+        "ORIGINAL",
+        "PRIMARY_CONFIRMATION",
+        "INDEPENDENT_REPORT",
+        "REPOST",
+        "SYNDICATED",
+        "QUOTES_SOURCE",
+        "UNKNOWN"
+      ]
+    },
+    "availability": {
+      "enum": [
+        "ACCESSIBLE",
+        "PARTIAL",
+        "UNAVAILABLE",
+        "LOGIN_REQUIRED",
+        "DELETED",
+        "UNKNOWN"
+      ]
+    },
+    "reputation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "score",
+        "sample_size",
+        "later_confirmed",
+        "false_or_materially_misleading",
+        "unresolved"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "NEW",
+            "INSUFFICIENT_DATA",
+            "ESTABLISHED"
+          ]
+        },
+        "score": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "sample_size": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "later_confirmed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "false_or_materially_misleading": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unresolved": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "published_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "publication_precision": {
+      "enum": [
+        "EXACT",
+        "DATE_ONLY",
+        "UNKNOWN"
+      ]
+    }
+  }
+}

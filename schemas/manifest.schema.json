@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://marketriskmonitor.local/schemas/manifest.schema.json",
+  "title": "MRM Intelligence Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset_version",
+    "generated_at",
+    "status",
+    "languages",
+    "files"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "dataset_version": {
+      "type": "string",
+      "pattern": "^[0-9]{8}T[0-9]{6}Z$"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "enum": [
+        "OK"
+      ]
+    },
+    "languages": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "en",
+          "hr",
+          "de",
+          "fr",
+          "es"
+        ]
+      }
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "events",
+        "signals",
+        "risks",
+        "sources",
+        "alerts",
+        "audit_summary"
+      ],
+      "properties": {
+        "events": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes",
+            "records",
+            "schema_version"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "schema_version": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "signals": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes",
+            "records",
+            "schema_version"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "schema_version": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "risks": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes",
+            "records",
+            "schema_version"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "schema_version": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "sources": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes",
+            "records",
+            "schema_version"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "schema_version": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "alerts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes",
+            "records",
+            "schema_version"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "schema_version": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "audit_summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes",
+            "records",
+            "schema_version"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "schema_version": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

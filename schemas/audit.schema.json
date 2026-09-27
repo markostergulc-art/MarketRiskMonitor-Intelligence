@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://marketriskmonitor.local/schemas/audit.schema.json",
+  "title": "MRM OSINT Run Audit",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "invocation",
+    "started_at",
+    "finished_at",
+    "window_start",
+    "window_end",
+    "result",
+    "validation",
+    "publication",
+    "counts"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "invocation": {
+      "enum": [
+        "MANUAL",
+        "SCHEDULED"
+      ]
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "finished_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "window_start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "window_end": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "result": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "NO_CHANGE",
+        "PUBLISH_PENDING"
+      ]
+    },
+    "validation": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL"
+      ]
+    },
+    "publication": {
+      "enum": [
+        "PUBLISHED",
+        "NOT_PUBLISHED",
+        "PENDING"
+      ]
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sources_considered",
+        "candidate_events",
+        "new_events",
+        "updated_events",
+        "retracted_events",
+        "duplicate_reports_collapsed"
+      ],
+      "properties": {
+        "sources_considered": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "candidate_events": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "new_events": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "updated_events": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "retracted_events": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "duplicate_reports_collapsed": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}
